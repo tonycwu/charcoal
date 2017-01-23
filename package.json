@@ -1,14 +1,13 @@
 {
-  "name": "charcoal-css-framework",
+  "name": "charcoal-framework",
   "version": "0.0.1",
   "description": "A CSS framework built with Vue.js components.",
   "scripts": {
     "gulp": "gulp"
   },
-  "author": "",
+  "author": "Seth Davis",
   "license": "ISC",
   "dependencies": {
-    "slick-carousel": "^1.6.0",
     "vue": "^2.0.5"
   },
   "devDependencies": {
