@@ -1,0 +1,145 @@
+//doc
+  ---
+  title: Buttons
+  name: buttons
+  category: Atoms
+  ---
+
+  Buttons should be used sparingly.
+
+  ```html_example 
+  <ch-button btn-text="Red" class="btn-red"></ch-button>
+  ```
+  
+.btn, button
+  display: inline-block
+  height: 38px
+  padding: 0 30px
+  margin: 0 10px 10px 0
+  color: $btn-color-text
+  text-align: center
+  font-size: $button-font-size
+  font-weight: 600
+  line-height: 38px
+  letter-spacing: .1rem
+  text-transform: uppercase
+  text-decoration: none
+  white-space: nowrap
+  background-color: $btn-color-background
+  border-radius: $border-radius
+  border: 0px solid $btn-color-border
+  cursor: pointer
+  box-sizing: border-box
+  transition: background-color .3s ease-out
+
+input
+  &[type="submit"], &[type="reset"], &[type="button"]
+    display: inline-block
+    height: 38px
+    padding: 0 30px
+    color: $input-color-text
+    text-align: center
+    font-size: $button-font-size
+    font-weight: 600
+    line-height: 38px
+    letter-spacing: .1rem
+    text-transform: uppercase
+    text-decoration: none
+    white-space: nowrap
+    background-color: $grey-70
+    border-radius: 4px
+    border: 0px solid $btn-color-border
+    cursor: pointer
+    box-sizing: border-box
+
+.btn:hover, button:hover
+  color: $btn-color-text-hover
+  border-color: $btn-color-border
+  outline: 0
+
+input
+  &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
+    color: $input-color-text
+    border-color: $input-color-border
+    outline: 0
+
+.btn:focus, button:focus
+  color: $btn-color-text
+  border-color: $btn-color-border
+  outline: 0
+
+input
+  &[type="submit"]:focus, &[type="reset"]:focus, &[type="button"]:focus
+    color: $input-color-text
+    border-color: $input-color-border
+    outline: 0
+
+.btn.btn-primary, button.btn-primary
+  color: $btn-color-text
+  background-color: $btn-color-background
+  border-color: $btn-color-border
+
+input
+  &[type="submit"].btn-primary, &[type="reset"].btn-primary, &[type="button"].btn-primary
+    color: $input-color-text
+    background-color: #33C3F0
+    border-color: #33C3F0
+
+.btn.btn-primary:hover, button.btn-primary:hover
+  color: $btn-color-text
+  background-color: #1EAEDB
+  border-color: #1EAEDB
+
+input
+  &[type="submit"].btn-primary:hover, &[type="reset"].btn-primary:hover, &[type="button"].btn-primary:hover
+    color: #FFF
+    background-color: #1EAEDB
+    border-color: #1EAEDB
+
+.btn.btn-primary:focus, button.btn-primary:focus
+  color: #FFF
+  background-color: #1EAEDB
+  border-color: #1EAEDB
+
+input
+  &[type="submit"].btn-primary:focus, &[type="reset"].btn-primary:focus, &[type="button"].btn-primary:focus
+    color: #FFF
+    background-color: #1EAEDB
+    border-color: #1EAEDB
+  &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"]
+    height: 38px
+    padding: 6px 10px
+    // The 6px vertically centers text on FF, ignored by Webkit
+    background-color: $input-color-background
+    border: 0px solid $input-color-border
+    border-radius: $border-radius
+    box-shadow: none
+    box-sizing: border-box
+
+// BUTTON COLORS
+.btn-red
+  +btn-color ($red, $red-light)
+
+.btn-orange
+  +btn-color ($orange, $orange-light)
+
+.btn-yellow
+  +btn-color ($yellow, $yellow-light)
+  color: $grey-40
+  &:hover
+    color: $grey-30
+
+.btn-green
+  +btn-color ($green, $green-light)
+
+.btn-tq
+  +btn-color ($tq, $tq-light)
+
+.btn-blue
+  +btn-color ($blue, $blue-light)
+
+.btn-navy
+  +btn-color ($navy, $navy-light)
+
+.btn-purple
+  +btn-color ($purple, $purple-light)

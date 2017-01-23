@@ -1,0 +1,30 @@
+//doc
+  ---
+  title: Mixin
+  name: mixin
+  category: Atoms
+  ---
+
+  A few clever mixins.
+
+=btn-color($bg-color, $bg-hover-color)
+  color: $grey-10
+  border-color: darken($bg-color, $color-delta)
+  background-color: $bg-color
+  transition: color $transition-link-time, background-color $transition-link-time
+  &:hover
+    color: $white
+    background-color: $bg-hover-color
+    border-color: $bg-hover-color
+
+=gradient-bottom-to-top($bottom-color, $bottom-percent, $top-color, $top-percent)
+  background: $bottom-color
+  background: -webkit-linear-gradient(rgba($top-color, $top-percent),rgba($bottom-color, $bottom-percent))
+  background: -o-linear-gradient(rgba($top-color, $top-percent), rgba($bottom-color, $bottom-percent))
+  background: -moz-linear-gradient(rgba($top-color, $top-percent), rgba($bottom-color, $bottom-percent))
+  background: linear-gradient(rgba($top-color, $top-percent), rgba($bottom-color, $bottom-percent))
+
+=border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box

@@ -1,0 +1,47 @@
+//doc
+  ---
+  title: Grid
+  name: grid
+  category: Molecules
+  ---
+
+  Responsive grid. Influenced by Bootstrap.
+
+*
+  box-sizing: border-box
+
+.container
+  padding: 0 $container-padding
+
+.container-full-width
+  padding: 0 $container-padding
+  margin: 0 auto
+
+.row
+  margin: 0 (-$column-padding)
+
+@function percentage-width($span, $columns)
+  @return ($span / $columns) * 100%
+
+@media (min-width: $break-point-sm)
+  .container
+    margin: 0 auto
+    
+@media (min-width: $break-point-md)
+  .container-w-sidebar
+    margin-left: 310px
+
+@each $breakpoint, $size in $container-breakpoint-list
+  @media (min-width: $breakpoint)
+    .container
+      width: $size
+
+@each $key, $val in $grid-breakpoints
+  @media (min-width: #{$val})
+    @for $i from 1 through $grid-columns
+      .col-#{$key}-#{$i}
+        position: relative
+        width: percentage-width($i, $grid-columns)
+        min-height: 1px
+        float: left
+        padding: 0 $column-padding
