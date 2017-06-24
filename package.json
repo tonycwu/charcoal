@@ -1,33 +1,33 @@
 {
-  "name": "charcoal-framework",
-  "version": "0.0.1",
-  "description": "A CSS framework built with Vue.js components.",
+  "name": "charcoal",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "Seth Davis <setholito@gmail.com>",
+  "private": true,
   "scripts": {
-    "gulp": "gulp"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "author": "Seth Davis",
-  "license": "ISC",
   "dependencies": {
-    "vue": "^2.0.5"
+    "bulma": "^0.4.2",
+    "font-awesome": "^4.7.0",
+    "vue": "^2.3.3",
+    "vue-router": "^2.6.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.16.0",
-    "browserify": "^13.1.1",
-    "clean-css": "^3.4.19",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.12",
-    "gulp-concat": "^2.6.0",
-    "gulp-hologram": "^1.2.0",
-    "gulp-jshint": "^2.0.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7",
-    "jshint": "^2.9.3",
-    "jslint": "^0.10.3",
-    "vinyl-source-stream": "^1.1.0",
-    "vueify": "^9.2.4"
-  },
-  "browser": {
-    "vue": "vue/dist/vue.common"
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }

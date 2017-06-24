@@ -1,19 +1,18 @@
-![Charcoal Logo Small](_assets/charcoal-logo-sm.png)
+# vbh-setup
 
-# Charcoal
+> A Vue.js project
 
-A CSS Framework with built-in Vue.js components and style guide generator.
+## Build Setup
 
-### Built With
+``` bash
+# install dependencies
+npm install
 
-* Vue  
-* SASS  
-* Gulp
-* Browserify  
-* Vueify
+# serve with hot reload at localhost:8080
+npm run dev
 
-### Style Guide
+# build for production with minification
+npm run build
+```
 
-* Hologram  
-
-**You must have [Hologram](https://trulia.github.io/hologram/) installed to compile style guide!**
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
