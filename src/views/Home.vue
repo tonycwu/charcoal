@@ -17,15 +17,18 @@
                     :footerItems="[
                         { 
                             verb: 'Like', 
-                            link: 'www.google.com' 
+                            link: 'http://www.google.com',
+                            icon: 'fa-thumbs-up' 
                         }, 
                         { 
                             verb: 'Tweet', 
-                            link: 'www.google.com'
+                            link: 'http://www.google.com',
+                            icon: 'fa-twitter'
                         }, 
                         { 
                             verb: 'Share', 
-                            link: 'www.google.com' }]">
+                            link: 'http://www.google.com',
+                            icon: 'fa-share' }]">
                 </ch-card>
             </div>
             <div class="column">
@@ -35,15 +38,18 @@
                     :footerItems="[
                         { 
                             verb: 'Like', 
-                            link: 'www.google.com' 
+                            link: 'http://www.google.com',
+                            icon: 'fa-thumbs-up' 
                         }, 
                         { 
                             verb: 'Tweet', 
-                            link: 'www.google.com'
+                            link: 'http://www.google.com',
+                            icon: 'fa-twitter'
                         }, 
                         { 
                             verb: 'Share', 
-                            link: 'www.google.com' }]">
+                            link: 'http://www.google.com',
+                            icon: 'fa-share' }]">
                 </ch-card>
             </div>
             <div class="column">
@@ -53,15 +59,18 @@
                     :footerItems="[
                         { 
                             verb: 'Like', 
-                            link: 'www.google.com' 
+                            link: 'http://www.google.com',
+                            icon: 'fa-thumbs-up' 
                         }, 
                         { 
                             verb: 'Tweet', 
-                            link: 'www.google.com'
+                            link: 'http://www.google.com',
+                            icon: 'fa-twitter'
                         }, 
                         { 
                             verb: 'Share', 
-                            link: 'www.google.com' }]">
+                            link: 'http://www.google.com',
+                            icon: 'fa-share' }]">
                 </ch-card>
             </div>
         </div>

@@ -11,7 +11,7 @@
         <footer class="card-footer">
             <p v-for="item in footerItems" class="card-footer-item">
                 <span>
-                    <a :href="item.link">{{ item.verb }}</a>
+                    <a :href="item.link"><i class="fa" :class="item.icon"></i> {{ item.verb }}</a>
                 </span>
             </p>
         </footer>
