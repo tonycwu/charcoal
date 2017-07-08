@@ -46,8 +46,4 @@ $primary: #4d4d4d;
     opacity: 0;
 }
 
-.margin-bottom {
-    margin-bottom: 25px;
-}
-
 </style>
