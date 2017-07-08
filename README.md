@@ -1,4 +1,4 @@
-# vbh-setup
+# vue-bulma-boilerplate
 
 > A Vue.js project
 
