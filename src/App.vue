@@ -12,8 +12,8 @@
 
 <script>
 
-import ChHeader from './components/layout/Header.vue'
-import ChFooter from './components/layout/Footer.vue'
+import ChHeader from './ch-components/layouts/Header.vue'
+import ChFooter from './ch-components/layouts/Footer.vue'
 
 export default {
     name: 'app',

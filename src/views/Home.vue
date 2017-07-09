@@ -83,7 +83,7 @@
 
 <script>
 
-import ChCard from '../components/components/Card.vue'
+import ChCard from '../ch-components/components/Card.vue'
 
 export default {
     data() {
