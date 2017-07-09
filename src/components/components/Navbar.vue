@@ -2,7 +2,9 @@
     <nav class="nav">
         <div class="nav-left">
             <router-link to="/" class="nav-item">
-                <i class="fa fa-home"></i>
+                <span class="icon">
+                    <i class="fa fa-home"></i>
+                </span>
             </router-link>
         </div>
         <div class="nav-center">

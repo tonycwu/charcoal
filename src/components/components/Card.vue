@@ -10,9 +10,11 @@
         </div>
         <footer class="card-footer">
             <p v-for="item in footerItems" class="card-footer-item">
-                <span>
-                    <a :href="item.link"><i class="fa" :class="item.icon"></i> {{ item.verb }}</a>
-                </span>
+                <a :href="item.link">
+                    <span class="icon is-small">
+                        <i class="fa margin-right" :class="item.icon"></i> {{ item.verb }}
+                    </span>
+                </a>
             </p>
         </footer>
     </div>
@@ -25,3 +27,13 @@ export default {
 }
 
 </script>
+
+<style lang="scss">
+    
+footer.card-footer {
+    .margin-right {
+        margin-right: 8px;
+    }
+}
+
+</style>
