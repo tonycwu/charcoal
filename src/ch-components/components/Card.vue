@@ -9,10 +9,10 @@
             </p>
         </div>
         <footer class="card-footer">
-            <p v-for="item in footerItems" class="card-footer-item">
-                <a :href="item.link">
+            <p v-for="btn in btnList" class="card-footer-item">
+                <a :href="btn.link">
                     <span class="icon is-small">
-                        <i class="fa margin-right" :class="item.icon"></i> {{ item.verb }}
+                        <i class="fa margin-right" :class="btn.icon"></i> {{ btn.verb }}
                     </span>
                 </a>
             </p>
@@ -23,7 +23,7 @@
 <script>
     
 export default {
-    props: ['title', 'subtitle', 'footerItems']
+    props: ['title', 'subtitle', 'btnList']
 }
 
 </script>

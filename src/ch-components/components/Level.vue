@@ -1,14 +1,22 @@
 <template>
     <nav class="level">
-        <div v-for="item in levelItems" class="level-item has-text-centered">
+        <div v-for="level in levelList" class="level-item has-text-centered">
             <div>
                 <p class="heading">
-                    {{ item.heading }}
+                    {{ level.heading }}
                 </p>
                 <p class="title">
-                    {{ item.title }}
+                    {{ level.title }}
                 </p>
             </div>
         </div>
     </nav>
 </template>
+
+<script>
+    
+export default {
+    props: ['levelList']
+}
+
+</script>

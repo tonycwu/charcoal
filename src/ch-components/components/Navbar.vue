@@ -18,6 +18,9 @@
             <router-link to="/about" class="nav-item">
                 About
             </router-link>
+            <router-link to="/bag" class="nav-item">
+                Bag
+            </router-link>
             <div class="nav-item">
                 <div class="field is-grouped">
                     <p class="control">

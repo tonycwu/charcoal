@@ -12,17 +12,10 @@
 
 <script>
 
-import ChHeader from './ch-components/layouts/Header.vue'
-import ChFooter from './ch-components/layouts/Footer.vue'
+import ChHeader from './ch-components/constants/Header.vue'
+import ChFooter from './ch-components/constants/Footer.vue'
 
 export default {
-    name: 'app',
-    data () {
-        return {
-            title: 'Charcoal',
-            subtitle: 'Fuel for Web Apps'
-        }
-    },
     components: {
         ChHeader,
         ChFooter

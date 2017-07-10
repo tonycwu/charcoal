@@ -1,36 +1,31 @@
 <template>
     <aside class="menu">
-        <p class="menu-label">
-            General
-        </p>
-        <ul class="menu-list">
-            <li><a>Dashboard</a></li>
-            <li><a>Customers</a></li>
-        </ul>
-        <p class="menu-label">
-            Administration
-        </p>
-        <ul class="menu-list">
-            <li><a>Team Settings</a></li>
-            <li>
-                <a class="is-active">Manage Your Team</a>
-                <ul>
-                    <li><a>Members</a></li>
-                    <li><a>Plugins</a></li>
-                    <li><a>Add a member</a></li>
-                </ul>
-            </li>
-            <li><a>Invitations</a></li>
-            <li><a>Cloud Storage Environment Settings</a></li>
-            <li><a>Authentication</a></li>
-        </ul>
-        <p class="menu-label">
-            Transactions
-        </p>
-        <ul class="menu-list">
-            <li><a>Payments</a></li>
-            <li><a>Transfers</a></li>
-            <li><a>Balance</a></li>
-        </ul>
+        <div class="label-and-list" v-for="menu in menuList">
+            <p class="menu-label">
+                {{ menu.label }}
+            </p>
+            <ul class="menu-list">
+                <li v-for="link in menu.linkList">
+                    <a :href="link.url">
+                        {{ link.text }}
+                    </a>
+                    <ul>
+                        <li v-for="subLink in link.subLinkList">
+                            <a :href="subLink.url">
+                                {{ subLink.text }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </aside>
 </template>
+
+<script>
+    
+export default {
+    props: ['menuList']
+}
+
+</script>

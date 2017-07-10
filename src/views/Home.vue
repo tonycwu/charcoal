@@ -13,67 +13,11 @@
         </section>
         <section class="section">
             <div class="columns">
-                <div class="column">
+                <div class="column" v-for="card in ['First', 'Second', 'Third']">
                     <ch-card
-                        title="First"
+                        :title="card"
                         subtitle="Genius Name"
-                        :footerItems="[
-                            { 
-                                verb: 'Like', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-thumbs-up' 
-                            }, 
-                            { 
-                                verb: 'Tweet', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-twitter'
-                            }, 
-                            { 
-                                verb: 'Share', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-share' }]">
-                    </ch-card>
-                </div>
-                <div class="column">
-                    <ch-card
-                        title="Second"
-                        subtitle="Genius Name"
-                        :footerItems="[
-                            { 
-                                verb: 'Like', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-thumbs-up' 
-                            }, 
-                            { 
-                                verb: 'Tweet', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-twitter'
-                            }, 
-                            { 
-                                verb: 'Share', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-share' }]">
-                    </ch-card>
-                </div>
-                <div class="column">
-                    <ch-card
-                        title="Third"
-                        subtitle="Genius Name"
-                        :footerItems="[
-                            { 
-                                verb: 'Like', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-thumbs-up' 
-                            }, 
-                            { 
-                                verb: 'Tweet', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-twitter'
-                            }, 
-                            { 
-                                verb: 'Share', 
-                                link: 'http://www.google.com',
-                                icon: 'fa-share' }]">
+                        :footerBtns="cardInfo['footer-buttons']">
                     </ch-card>
                 </div>
             </div>
@@ -89,7 +33,26 @@ export default {
     data() {
         return {
             title: 'Charcoal',
-            subtitle: 'Fuel for Web Apps'
+            subtitle: 'Fuel for Web Apps',
+            cardInfo: {
+                'footer-buttons': [
+                    { 
+                        verb: 'Like', 
+                        link: 'http://www.google.com',
+                        icon: 'fa-thumbs-up' 
+                    }, 
+                    { 
+                        verb: 'Tweet', 
+                        link: 'http://www.google.com',
+                        icon: 'fa-twitter'
+                    }, 
+                    { 
+                        verb: 'Share', 
+                        link: 'http://www.google.com',
+                        icon: 'fa-share' 
+                    }
+                ]
+            },
         }
     },
     components: {
