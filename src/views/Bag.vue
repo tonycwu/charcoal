@@ -52,7 +52,7 @@
                         Message
                     </h5>
                     <ch-message
-                        describer="is-info"
+                        describer=""
                         title="Test Message">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo accusantium, laudantium suscipit soluta, atque ipsum distinctio doloremque vero, facere nam asperiores odio dolor aspernatur reprehenderit repudiandae optio sed. Culpa, inventore.
@@ -81,6 +81,7 @@
                         @closeModal="modal1IsOpen = !modal1IsOpen"
                         @primaryClickModal="fakeSave"
                         :isOpen="modal1IsOpen"
+                        hasModalCard="true"
                         title="A Very Excellent Modal">
                         <p>
                             I've got some content!
