@@ -67,11 +67,37 @@
                     <h5 id="modal" class="title is-5">
                         Modal
                     </h5>
-                    <button @click="modalIsOpen = !modalIsOpen" class="button">
-                        Open Modal
+                    <button 
+                        @click="modal1IsOpen = !modal1IsOpen" 
+                        class="button">
+                        Open Modal 1
+                    </button>
+                    <button 
+                        @click="modal2IsOpen = !modal2IsOpen" 
+                        class="button">
+                        Open Modal 2
                     </button>
                     <ch-modal
-                        :isOpen="modalIsOpen">
+                        @closeModal="modal1IsOpen = !modal1IsOpen"
+                        @primaryClickModal="fakeSave"
+                        :isOpen="modal1IsOpen"
+                        title="A Very Excellent Modal">
+                        <p>
+                            I've got some content!
+                        </p>
+                    </ch-modal>
+                    <ch-modal
+                        @closeModal="modal2IsOpen = !modal2IsOpen"
+                        @primaryClickModal="fakeSave"
+                        :isOpen="modal2IsOpen"
+                        hasModalCard="true"
+                        title="A Second Modal">
+                        <p>
+                            I've got even better content!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id est vitae labore omnis nostrum autem, incidunt eaque at nam voluptatibus eum quas, illo amet. A voluptatibus sapiente dolor voluptates aliquam?
+                        </p>
                     </ch-modal>
                     <hr>
 
@@ -251,7 +277,8 @@ export default {
                     ]
                 }
             ],
-            modalIsOpen: false
+            modal1IsOpen: false,
+            modal2IsOpen: false
         };
     },
     components: {
@@ -266,6 +293,14 @@ export default {
         ChPagination,
         ChPanel,
         ChTabs
+    },
+    methods: {
+        closeModal() {
+            return this.modalIsOpen = false;
+        },
+        fakeSave() {
+            console.log('Saved!');
+        }
     }
 }
 
