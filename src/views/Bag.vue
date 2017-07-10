@@ -128,6 +128,14 @@
                     </h5>
                     <ch-tabs>
                     </ch-tabs>
+
+                    <h5 id="axios" class="title is-5">
+                        Axios
+                    </h5>
+                    <p v-for="quote in quoteList">
+                        <em v-html="quote.content"></em>
+                        — <span v-html="quote.title"></span>
+                    </p>
                 </div>
             </div>
         </section>
@@ -149,8 +157,17 @@ import ChPanel from '../ch-components/components/Panel.vue';
 import ChTabs from '../ch-components/components/Tabs.vue';
 
 export default {
+    created() {
+        this.$http({
+            method: 'GET',
+            url: 'https://quotesondesign.com/wp-json/posts'
+        }).then((res) => {
+            return this.quoteList = res.data;
+        })
+    },
     data() {
         return {
+            quoteList: null,
             bagMenuList: [
                 {
                     label: 'Components',
