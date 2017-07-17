@@ -1,3 +1,9 @@
+<p align="center">
+  <br>
+  <img width="200" src="https://raw.githubusercontent.com/setholito/charcoal/master/src/assets/charcoal-logo.png" alt="Charcoal Logo">
+  <br>
+</p>
+
 # Charcoal
 ### Fuel for Web Apps
 
