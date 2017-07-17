@@ -11,9 +11,11 @@
 </template>
 
 <script>
-    
-export default {
-    props: ['crumbList']
-}
+
+    export default {
+        props: ['crumbList']
+    }
 
 </script>
+
+<style lang="scss"></style>

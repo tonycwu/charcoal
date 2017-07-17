@@ -1,13 +1,19 @@
 <template>
-    <progress class="progress" :class="describer" :value="number" :max="max">
+    <progress
+        class="progress"
+        :class="describer"
+        :value="number"
+        :max="max">
         {{ number }}
     </progress>
 </template>
 
 <script>
-    
-export default {
-    props: ['describer', 'number', 'max']
-}
+
+    export default {
+        props: ['describer', 'number', 'max']
+    }
 
 </script>
+
+<style lang="scss"></style>

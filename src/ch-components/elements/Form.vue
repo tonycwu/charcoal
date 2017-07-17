@@ -1,5 +1,11 @@
 <template>
-    <form method="" action="">
-        <slot></slot>
-    </form>
+    <div class="form-container">
+        <form>
+            <slot></slot>
+        </form>
+    </div>
 </template>
+
+<script></script>
+
+<style lang="scss"></style>

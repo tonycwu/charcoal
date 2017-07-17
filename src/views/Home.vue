@@ -27,37 +27,39 @@
 
 <script>
 
-import ChCard from '../ch-components/components/Card.vue'
+    import ChCard from '../ch-components/components/Card.vue'
 
-export default {
-    data() {
-        return {
-            title: 'Charcoal',
-            subtitle: 'Fuel for Web Apps',
-            cardInfo: {
-                'footer-buttons': [
-                    { 
-                        verb: 'Like', 
-                        link: 'http://www.google.com',
-                        icon: 'fa-thumbs-up' 
-                    }, 
-                    { 
-                        verb: 'Tweet', 
-                        link: 'http://www.google.com',
-                        icon: 'fa-twitter'
-                    }, 
-                    { 
-                        verb: 'Share', 
-                        link: 'http://www.google.com',
-                        icon: 'fa-share' 
-                    }
-                ]
-            },
+    export default {
+        data() {
+            return {
+                title: 'Charcoal',
+                subtitle: 'Fuel for Web Apps',
+                cardInfo: {
+                    'footer-buttons': [
+                        { 
+                            verb: 'Like', 
+                            link: 'http://www.google.com',
+                            icon: 'fa-thumbs-up' 
+                        }, 
+                        { 
+                            verb: 'Tweet', 
+                            link: 'http://www.google.com',
+                            icon: 'fa-twitter'
+                        }, 
+                        { 
+                            verb: 'Share', 
+                            link: 'http://www.google.com',
+                            icon: 'fa-share' 
+                        }
+                    ]
+                },
+            }
+        },
+        components: {
+            ChCard
         }
-    },
-    components: {
-        ChCard
     }
-}
 
 </script>
+
+<style lang="scss"></style>
