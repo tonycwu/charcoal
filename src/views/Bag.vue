@@ -132,10 +132,12 @@
                     <h5 id="axios" class="title is-5">
                         Axios
                     </h5>
-                    <p v-for="quote in quoteList">
-                        <em v-html="quote.content"></em>
-                        — <span v-html="quote.title"></span>
-                    </p>
+                    <h5 class="title is-5">
+                        <span v-html="bpi.bpi.USD.symbol"></span>
+                        {{ bpi.bpi.USD.rate }}
+                    </h5>
+                    {{ bpi.bpi.USD }}
+                    <pre><code>{{ bpi }}</code></pre>
                 </div>
             </div>
         </section>
@@ -160,14 +162,14 @@ export default {
     created() {
         this.$http({
             method: 'GET',
-            url: 'https://quotesondesign.com/wp-json/posts'
+            url: 'http://api.coindesk.com/v1/bpi/currentprice.json'
         }).then((res) => {
-            return this.quoteList = res.data;
+            return this.bpi = res.data;
         })
     },
     data() {
         return {
-            quoteList: null,
+            bpi: null,
             bagMenuList: [
                 {
                     label: 'Components',
