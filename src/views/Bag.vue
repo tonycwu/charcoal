@@ -126,7 +126,8 @@
                     <h5 id="tabs" class="title is-5">
                         Tabs
                     </h5>
-                    <ch-tabs>
+                    <ch-tabs
+                      :tabList="tabList">
                     </ch-tabs>
 
                     <h5 id="axios" class="title is-5">
@@ -296,6 +297,20 @@ export default {
                         }
                     ]
                 }
+            ],
+            tabList: [
+              {
+                display: 'Tab 1',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo amet id numquam est quasi officiis dolores autem distinctio ipsa, asperiores hic consectetur odio sapiente voluptate iste dignissimos beatae obcaecati sunt?'
+              },
+              {
+                display: 'Tab 2',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consectetur rem, dolorum, fuga quasi rerum ipsa velit.'
+              },
+              {
+                display: 'Tab 3',
+                content: 'Sunt assumenda ullam architecto odit, voluptatum consequatur a deleniti, praesentium ipsa maiores, perferendis itaque ipsam, sequi nisi! Quibusdam doloribus molestias harum iure!'
+              },
             ],
             modal1IsOpen: false,
             modal2IsOpen: false
