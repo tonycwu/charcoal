@@ -19,7 +19,7 @@
                 <router-link to="/about" class="nav-item">
                     About
                 </router-link>
-                <router-link to="/bag" class="nav-item">
+                <router-link to="/bag/components" class="nav-item">
                     Bag
                 </router-link>
                 <div class="nav-item">
