@@ -1,28 +1,54 @@
 <template>
     <div class="components-container">
-        <h5 id="breadcrumb" class="title is-5">
-            Breadcrumb
-        </h5>
-        <ch-breadcrumb 
-            :crumbList="crumbList">
-        </ch-breadcrumb>
+        <div class="columns">
+            <div class="column is-6">
+                <h5 id="breadcrumb" class="title is-5">
+                    Breadcrumb
+                </h5>
+                <ch-breadcrumb 
+                    :crumbData="crumbData">
+                </ch-breadcrumb>
+            </div>
+            <div class="column is-6">
+                <h5 class="title is-5">
+                    Code
+                </h5>
+                <pre><code>&lt;ch-breadcrumb<br>    :crumbData="crumbData"&gt;<br>&lt;/ch-breadcrumb&gt;</code></pre>
+            </div>
+        </div>
         <hr>
 
-        <h5 id="card" class="title is-5">
-            Card
-        </h5>
-        <ch-card
-            :title="card.title"
-            :subtitle="card.subtitle">
-        </ch-card>
+        <div class="columns">
+            <div class="column is-6">
+                <h5 id="card" class="title is-5">
+                    Card
+                </h5>
+                <ch-card
+                    :title="card.title"
+                    :subtitle="card.subtitle">
+                </ch-card>
+            </div>
+            <div class="column is-6">
+                <h5 class="title is-5">
+                    Code
+                </h5>
+                <pre><code>&lt;ch-card<br>    :title="card.title"<br>    :subtitle="card.subtitle"&gt;<br>&lt;/ch-card&gt;</code></pre>
+            </div>
+        </div>
         <hr>
+
 
         <h5 id="level" class="title is-5">
             Level
         </h5>
         <ch-level
-            :levelList="levelList">
+            :levelData="levelData">
         </ch-level>
+        <br>
+        <h5 class="title is-5">
+            Code
+        </h5>
+        <pre><code>&lt;ch-level<br>    :levelData="levelData"&gt;<br>&lt;/ch-level&gt;</code></pre>
         <hr>
 
         <h5 id="media-object" class="title is-5">
@@ -30,13 +56,18 @@
         </h5>
         <ch-media-object>
         </ch-media-object>
+        <br>
+        <h5 class="title is-5">
+            Code
+        </h5>
+        <pre><code>&lt;ch-media-object&gt;<br>&lt;/ch-media-object&gt;</code></pre>
         <hr>
 
         <h5 id="menu" class="title is-5">
             Menu
         </h5>
         <ch-menu
-            :menuList="menuList">
+            :menuData="menuData">
         </ch-menu>
         <hr>
 
@@ -121,7 +152,7 @@
             Tabs
         </h5>
         <ch-tabs
-            :tabList="tabList">
+            :tabData="tabData">
         </ch-tabs>
     </div>
 </template>
@@ -147,7 +178,7 @@
                     title: 'Pheonix',
                     subtitle: 'Rise from the Ashes'
                 },
-                crumbList: [
+                crumbData: [
                     {
                         title: 'A',
                         link: '#'
@@ -161,7 +192,7 @@
                         link: '#'
                     }
                 ],
-                levelList: [
+                levelData: [
                     {
                         heading: 'Brisket',
                         title: '$15.00 / lb'
@@ -169,20 +200,16 @@
                     {
                         heading: 'Sausage',
                         title: '$8.00 / lb'
-                    },
-                    {
-                        heading: 'Chicken',
-                        title: '$7.00 / lb'
                     }
                 ],
-                menuList: [
+                menuData: [
                     {
                         label: 'First Label',
-                        linkList: [
+                        linkData: [
                             {
                                 text: 'Link 1',
                                 url: '#',
-                                subLinkList: [
+                                subLinkData: [
                                     {
                                         text: 'Link 2',
                                         url: '#'
@@ -197,7 +224,7 @@
                     },
                     {
                         label: 'Second Label',
-                        linkList: [
+                        linkData: [
                             {
                                 text: 'Link 1',
                                 url: '#'
@@ -209,7 +236,7 @@
                         ]
                     }
                 ],
-                tabList: [
+                tabData: [
                   {
                     display: 'Tab 1',
                     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo amet id numquam est quasi officiis dolores autem distinctio ipsa, asperiores hic consectetur odio sapiente voluptate iste dignissimos beatae obcaecati sunt?'

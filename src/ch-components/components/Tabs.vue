@@ -2,7 +2,7 @@
     <div class="tabs">
         <ul>
             <Tab
-                v-for="tab in tabList"
+                v-for="tab in tabData"
                 :key="tab"
                 :display="tab.display">
             </Tab>
@@ -15,7 +15,7 @@
     import Tab from './Tab.vue'
 
     export default {
-        props: ['tabList'],
+        props: ['tabData'],
         data() {
             return {
 

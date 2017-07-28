@@ -1,17 +1,17 @@
 <template>
     <div class="menu-container">
         <aside class="menu">
-            <div class="label-and-list" v-for="menu in menuList">
+            <div class="label-and-list" v-for="menu in menuData">
                 <p class="menu-label">
                     {{ menu.label }}
                 </p>
                 <ul class="menu-list">
-                    <li v-for="link in menu.linkList">
+                    <li v-for="link in menu.linkData">
                         <a :href="link.url">
                             {{ link.text }}
                         </a>
                         <ul>
-                            <li v-for="subLink in link.subLinkList">
+                            <li v-for="subLink in link.subLinkData">
                                 <a :href="subLink.url">
                                     {{ subLink.text }}
                                 </a>
@@ -27,7 +27,7 @@
 <script>
 
     export default {
-        props: ['menuList']
+        props: ['menuData']
     }
 
 </script>

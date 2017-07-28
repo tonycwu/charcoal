@@ -16,9 +16,6 @@
                 <span></span>
             </span>
             <div class="nav-right nav-menu">
-                <router-link to="/about" class="nav-item">
-                    About
-                </router-link>
                 <router-link to="/bag/components" class="nav-item">
                     Bag
                 </router-link>
