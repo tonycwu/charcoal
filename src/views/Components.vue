@@ -63,12 +63,22 @@
         <pre><code>&lt;ch-media-object&gt;<br>&lt;/ch-media-object&gt;</code></pre>
         <hr>
 
-        <h5 id="menu" class="title is-5">
-            Menu
-        </h5>
-        <ch-menu
-            :menuData="menuData">
-        </ch-menu>
+        <div class="columns">
+            <div class="column is-6">
+                <h5 id="menu" class="title is-5">
+                    Menu
+                </h5>
+                <ch-menu
+                    :menuData="menuData">
+                </ch-menu>
+            </div>
+            <div class="column is-6">
+                <h5 class="title is-5">
+                    Code
+                </h5>
+                <pre><code>&lt;ch-menu<br>    :menuData="menuData"&gt;<br>&lt;/ch-menu&gt;</code></pre>
+            </div>
+        </div>
         <hr>
 
         <h5 id="message" class="title is-5">
@@ -175,8 +185,8 @@
         data() {
             return {
                 card: {
-                    title: 'Pheonix',
-                    subtitle: 'Rise from the Ashes'
+                    title: 'Frutiger',
+                    subtitle: 'A Humanist Typeface'
                 },
                 crumbData: [
                     {
