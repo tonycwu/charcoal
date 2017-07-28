@@ -10,7 +10,7 @@
                 </p>
             </div>
             <footer class="card-footer">
-                <p v-for="btn in btnList" class="card-footer-item">
+                <p v-for="btn in btnData" class="card-footer-item">
                     <a :href="btn.link">
                         <span class="icon is-small">
                             <i class="fa margin-right" :class="btn.icon"></i> {{ btn.verb }}
@@ -25,7 +25,7 @@
 <script>
 
     export default {
-        props: ['title', 'subtitle', 'btnList']
+        props: ['title', 'subtitle', 'btnData']
     }
 
 </script>

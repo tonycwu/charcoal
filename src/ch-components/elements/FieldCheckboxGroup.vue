@@ -1,6 +1,6 @@
 <template>
     <div class="checkbox-group-container">
-        <div class="field" v-for="checkbox in checkboxList">
+        <div class="field" v-for="checkbox in checkboxData">
             <p class="control">
                 <label class="checkbox">
                     <input
@@ -19,7 +19,7 @@
 <script>
 
 export default {
-    props: ['checkboxList'],
+    props: ['checkboxData'],
     data() {
         return {
             checkboxModel: []

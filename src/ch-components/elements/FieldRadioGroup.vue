@@ -1,6 +1,6 @@
 <template>
     <div class="radio-container">
-        <div class="field" v-for="radio in radioList">
+        <div class="field" v-for="radio in radioData">
             <p class="control">
                 <label class="radio">
                     <input
@@ -19,7 +19,7 @@
 <script>
 
     export default {
-        props: ['radioList'],
+        props: ['radioData'],
         data() {
             return {
                 radioModel: ''

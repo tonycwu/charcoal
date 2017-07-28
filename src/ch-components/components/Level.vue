@@ -1,7 +1,7 @@
 <template>
     <div class="level-container">
         <nav class="level">
-            <div v-for="level in levelList" class="level-item has-text-centered">
+            <div v-for="level in levelData" class="level-item has-text-centered">
                 <div>
                     <p class="heading">
                         {{ level.heading }}
@@ -18,7 +18,7 @@
 <script>
 
     export default {
-        props: ['levelList']
+        props: ['levelData']
     }
 
 </script>

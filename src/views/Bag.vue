@@ -2,9 +2,9 @@
     <div class="bag-container">
         <section class="section">
             <div class="columns">
-                <div class="column is-4">
+                <div class="column is-2 is-offset-1">
                     <ch-menu
-                        :menuList="bagMenuList">
+                        :menuData="bagMenuData">
                     </ch-menu>
                 </div>
                 <div class="column is-8">
@@ -22,23 +22,13 @@
     export default {
         data() {
             return {
-                bagMenuList: [
+                bagMenuData: [
                     {
                         label: 'Components',
-                        linkList: [
+                        linkData: [
                             {
                                 text: 'Breadcrumb',
                                 url: 'components#breadcrumb',
-                                subLinkList: [
-                                    {
-                                        text: 'Link 2',
-                                        url: '#'
-                                    },
-                                    {
-                                        text: 'Link 2',
-                                        url: '#'
-                                    }
-                                ]
                             },
                             {
                                 text: 'Card',
@@ -84,8 +74,11 @@
                     },
                     {
                         label: 'Elements',
-                        linkList: [
-                            
+                        linkData: [
+                            {
+                                text: 'Checkbox Group',
+                                url: 'elements#checkbox-group'
+                            }
                         ]
                     }
                 ]

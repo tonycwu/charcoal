@@ -1,7 +1,7 @@
 <template>
     <nav class="breadcrumb">
         <ul>
-            <li v-for="crumb in crumbList">
+            <li v-for="crumb in crumbData">
                 <a :href="crumb.link">
                     {{ crumb.title }}
                 </a>
@@ -13,7 +13,7 @@
 <script>
 
     export default {
-        props: ['crumbList']
+        props: ['crumbData']
     }
 
 </script>
