@@ -12,9 +12,14 @@
 
 <script>
 
-    export default {
-        props: ['crumbData']
+export default {
+    props: {
+        crumbData: {
+            type: Array,
+            default: []
+        }
     }
+}
 
 </script>
 

@@ -8,9 +8,13 @@
 
 <script>
 
-    export default {
-        props: ['describer']
+export default {
+    props: {
+        describer: {
+            type: String
+        }
     }
+}
 
 </script>
 

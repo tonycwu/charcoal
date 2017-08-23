@@ -10,9 +10,19 @@
 
 <script>
 
-    export default {
-        props: ['describer', 'number', 'max']
+export default {
+    props: {
+        describer: {
+            type: String
+        },
+        number: {
+            type: String
+        },
+        max: {
+            type: String
+        }
     }
+}
 
 </script>
 

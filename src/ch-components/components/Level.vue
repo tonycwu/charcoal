@@ -17,9 +17,13 @@
 
 <script>
 
-    export default {
-        props: ['levelData']
+export default {
+    props: {
+        levelData: {
+            type: Array
+        }
     }
+}
 
 </script>
 

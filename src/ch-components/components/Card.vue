@@ -24,9 +24,21 @@
 
 <script>
 
-    export default {
-        props: ['title', 'subtitle', 'btnData']
+export default {
+    props: {
+        title: {
+            type: String,
+            default: 'Title'
+        }, 
+        subtitle: {
+            type: String,
+            default: 'Subtitle'
+        },
+        btnData: {
+            type: Array
+        }
     }
+}
 
 </script>
 

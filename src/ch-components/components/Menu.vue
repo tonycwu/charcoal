@@ -26,9 +26,13 @@
 
 <script>
 
-    export default {
-        props: ['menuData']
+export default {
+    props: {
+        menuData: {
+            type: Array
+        }
     }
+}
 
 </script>
 

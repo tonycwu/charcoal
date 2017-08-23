@@ -42,7 +42,17 @@
 <script>
 
     export default {
-        props: ['title', 'isOpen', 'hasModalCard'],
+        props: {
+            title: {
+                type: String
+            },
+            isOpen: {
+                type: Boolean
+            },
+            hasModalCard: {
+                type: String
+            }
+        },
         methods: {
             primaryClick() {
                 this.$emit('primaryClickModal');

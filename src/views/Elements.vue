@@ -1,6 +1,13 @@
 <template>
     <div class="elements-container">
         <div class="columns">
+            <div class="column">
+                <h1 class="title is-1">
+                    Elements
+                </h1>
+            </div>
+        </div>
+        <div class="columns">
             <div class="column is-6">
                 <h5 id="checkbox-group" class="title is-5">
                     Checkbox Group
@@ -22,7 +29,7 @@
         <hr>
         <div class="columns">
             <div class="column is-6">
-                <h5 id="fieldRadioGroup" class="title is-5">
+                <h5 id="radio-group" class="title is-5">
                     Radio Group
                 </h5>
                 <ch-field-radio-group
@@ -44,43 +51,42 @@
 
 <script>
 
-    import ChFieldCheckboxGroup from '../ch-components/elements/FieldCheckboxGroup.vue';
-    import ChFieldRadioGroup from '../ch-components/elements/FieldRadioGroup.vue';
+import ChFieldCheckboxGroup from '../ch-components/elements/FieldCheckboxGroup.vue';
+import ChFieldRadioGroup from '../ch-components/elements/FieldRadioGroup.vue';
 
-    export default {
-        props: [''],
-        data() {
-            return {
-                fontChoices: [],
-                fontStyleSelection: 'Select from Radio Group',
-                fontData: [
-                    { name: 'Helvetica', value: 'helvetica' },
-                    { name: 'Baskerville', value: 'baskerville' },
-                    { name: 'Avenir', value: 'avenir' },
-                    { name: 'Source Sans', value: 'source-sans' },
-                    { name: 'Montserrat', value: 'montserrat' },
-                    { name: 'Clarendon', value: 'clarendon' },
-                ],
-                fontStyleData: [
-                    { name: 'Bold', value: 'bold' },
-                    { name: 'Italic', value: 'italic' },
-                    { name: 'Underline', value: 'underline' }
-                ]
-            }
+export default {
+    data() {
+        return {
+            fontChoices: [],
+            fontStyleSelection: 'Select from Radio Group',
+            fontData: [
+                { name: 'Helvetica', value: 'helvetica' },
+                { name: 'Baskerville', value: 'baskerville' },
+                { name: 'Avenir', value: 'avenir' },
+                { name: 'Source Sans', value: 'source-sans' },
+                { name: 'Montserrat', value: 'montserrat' },
+                { name: 'Clarendon', value: 'clarendon' },
+            ],
+            fontStyleData: [
+                { name: 'Bold', value: 'bold' },
+                { name: 'Italic', value: 'italic' },
+                { name: 'Underline', value: 'underline' }
+            ]
+        }
+    },
+    components: {
+        ChFieldCheckboxGroup,
+        ChFieldRadioGroup
+    },
+    methods: {
+        setFontChoices(val) {
+            this.fontChoices = val;
         },
-        components: {
-            ChFieldCheckboxGroup,
-            ChFieldRadioGroup
-        },
-        methods: {
-            setFontChoices(val) {
-                this.fontChoices = val;
-            },
-            setFontStyle(val) {
-                this.fontStyleSelection = val;
-            }
+        setFontStyle(val) {
+            this.fontStyleSelection = val;
         }
     }
+}
 
 </script>
 

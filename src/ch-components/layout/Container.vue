@@ -6,14 +6,13 @@
 
 <script>
 
-    export default {
-        props: ['describer'],
-        data() {
-            return {
-
-            }
+export default {
+    props: {
+        describer: {
+            type: String
         }
     }
+}
 
 </script>
 

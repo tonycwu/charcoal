@@ -19,7 +19,11 @@
 <script>
 
 export default {
-    props: ['checkboxData'],
+    props: {
+        checkboxData: {
+            type: Array
+        }
+    },
     data() {
         return {
             checkboxModel: []
@@ -36,8 +40,8 @@ export default {
 
 <style lang="scss" scoped>
 
-    label {
-        cursor: pointer;
-    }
+label {
+    cursor: pointer;
+}
 
 </style>

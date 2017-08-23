@@ -18,28 +18,32 @@
 
 <script>
 
-    export default {
-        props: ['radioData'],
-        data() {
-            return {
-                radioModel: ''
-            }
-        },
-        methods: {
-            radioClicked(evt) {
-                this.$emit('radioPick', evt);
-            }
+export default {
+    props: {
+        radioData: {
+            type: Array
+        }
+    },
+    data() {
+        return {
+            radioModel: ''
+        }
+    },
+    methods: {
+        radioClicked(e) {
+            this.$emit('radioPick', e);
         }
     }
+}
 
 </script>
 
 <style lang="scss">
 
-    .radio-container {
-        .field {
-            margin-right: 10px;
-        }
+.radio-container {
+    .field {
+        margin-right: 10px;
     }
+}
 
 </style>

@@ -1,30 +1,42 @@
 <template>
-    <div class="tabs">
-        <ul>
-            <Tab
-                v-for="tab in tabData"
-                :key="tab"
-                :display="tab.display">
-            </Tab>
-        </ul>
+    <div class="tabs-container">
+        <div class="tabs" :class="describer">
+            <ul>
+                <li v-for="tab in tabs" :class="{ 'is-active' : tab.isActive }">
+                    <a :href="tab.link" @click="selectTab(tab)">
+                        {{ tab.name }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <slot></slot>
     </div>
 </template>
 
 <script>
 
-    import Tab from './Tab.vue'
-
-    export default {
-        props: ['tabData'],
-        data() {
-            return {
-
-            }
-        },
-        components: {
-            Tab
+export default {
+    props: {
+        describer: {
+            type: String
+        }
+    },
+    created() {
+        this.tabs = this.$children;
+    },
+    data() {
+        return {
+            tabs: []
+        }
+    },
+    methods: {
+        selectTab(selectedTab) {
+            this.tabs.forEach(tab => {
+                tab.isActive = tab.name === selectedTab.name;
+            });
         }
     }
+}
 
 </script>
 

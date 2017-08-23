@@ -1,30 +1,32 @@
 <template>
-    <li
-        @click="setActiveTab"
-        @check="isActive = !isActive"
-        :class="{ 'is-active' : isActive }">
-        <a>
-            {{ display }}
-        </a>
-    </li>
+    <div class="card" v-show="isActive">
+        <div class="card-content">
+            <slot></slot>
+        </div>
+    </div>
 </template>
 
 <script>
 
-    export default {
-        props: ['display'],
-        data() {
-            return {
-                isActive: false
-            }
+export default {
+    props: {
+        name: {
+            type: String
         },
-        methods: {
-            setActiveTab() {
-                this.isActive = !this.isActive;
-                this.$emit('check');
-            }
+        selected: {
+            type: Boolean,
+            default: false
+        }
+    },
+    created() {
+        this.isActive = this.selected;
+    },
+    data() {
+        return {
+            isActive: false
         }
     }
+}
 
 </script>
 
