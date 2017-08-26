@@ -1,8 +1,6 @@
 <template>
-    <div class="card" v-show="isActive">
-        <div class="card-content">
-            <slot></slot>
-        </div>
+    <div class="tab-container" v-show="isActive">
+        <slot></slot>
     </div>
 </template>
 
