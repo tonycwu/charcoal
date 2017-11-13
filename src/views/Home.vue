@@ -17,7 +17,7 @@
                     <ch-card
                         :title="card"
                         subtitle="Genius Name"
-                        :footerBtns="cardInfo['footer-buttons']">
+                    >
                     </ch-card>
                 </div>
             </div>
@@ -33,26 +33,7 @@ export default {
     data() {
         return {
             title: 'Charcoal',
-            subtitle: 'Fuel for Web Apps',
-            cardInfo: {
-                'footer-buttons': [
-                    { 
-                        verb: 'Like', 
-                        link: 'http://www.google.com',
-                        icon: 'fa-thumbs-up' 
-                    }, 
-                    { 
-                        verb: 'Tweet', 
-                        link: 'http://www.google.com',
-                        icon: 'fa-twitter'
-                    }, 
-                    { 
-                        verb: 'Share', 
-                        link: 'http://www.google.com',
-                        icon: 'fa-share' 
-                    }
-                ]
-            },
+            subtitle: 'Fuel for Web Apps'
         }
     },
     components: {
