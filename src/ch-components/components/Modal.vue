@@ -7,19 +7,26 @@
                     <p class="modal-card-title">
                         {{ title }}
                     </p>
-                    <button 
-                        class="delete" 
-                        @click="closeClick">
+                    <button
+                        class="delete"
+                        @click="closeClick"
+                    >
                     </button>
                 </header>
                 <section class="modal-card-body">
                     <slot></slot>
                 </section>
                 <footer class="modal-card-foot">
-                    <a @click="primaryClick" class="button is-success">
+                    <a
+                        @click="primaryClick"
+                        class="button is-success"
+                    >
                         Save changes
                     </a>
-                    <a @click="closeClick" class="button">
+                    <a
+                        @click="closeClick"
+                        class="button"
+                    >
                         Cancel
                     </a>
                 </footer>
@@ -27,12 +34,13 @@
             <div class="image-container" v-else>
                 <div class="modal-content">
                     <p class="image is-4by3">
-                        <img src="http://bulma.io/images/placeholders/1280x960.png">
+                        <img src="http://bulma.io/images/placeholders/1280x960.png" />
                     </p>
                 </div>
-                <button 
+                <button
                     @click="closeClick"
-                    class="modal-close is-large">
+                    class="modal-close is-large"
+                >
                 </button>
             </div>
         </div>

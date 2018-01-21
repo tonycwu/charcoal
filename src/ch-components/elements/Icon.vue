@@ -1,7 +1,7 @@
 <template>
     <div class="icon-container">
-        <span class="icon" :class="describer">
-            <i class="fa" :class="icon"></i>
+        <span :class="`icon ${describer}`">
+            <i :class="`fa ${icon}`"></i>
         </span>
     </div>
 </template>

@@ -1,12 +1,15 @@
 <template>
     <div id="app">
-        <ch-header></ch-header>
+        <ch-header>
+        </ch-header>
         <transition
+            mode="out-in"
             name="fade"
-            mode="out-in">
+        >
             <router-view></router-view>
         </transition>
-        <ch-footer></ch-footer>
+        <ch-footer>
+        </ch-footer>
     </div>
 </template>
 
@@ -30,7 +33,7 @@ $primary: #4d4d4d;
 
 @import "../node_modules/bulma/bulma.sass";
 @import "../node_modules/font-awesome/css/font-awesome.css";
-    
+
 .fade-enter-active, .fade-leave-active {
     transition: opacity .2s;
 }

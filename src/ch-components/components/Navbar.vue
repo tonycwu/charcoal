@@ -2,7 +2,10 @@
     <div class="navbar-container">
         <nav class="nav">
             <div class="nav-left">
-                <router-link to="/" class="nav-item">
+                <router-link
+                    to="/"
+                    class="nav-item"
+                >
                     <span class="icon">
                         <i class="fa fa-home"></i>
                     </span>
@@ -16,13 +19,19 @@
                 <span></span>
             </span>
             <div class="nav-right nav-menu">
-                <router-link to="/bag/components" class="nav-item">
+                <router-link
+                    to="/bag/components"
+                    class="nav-item"
+                >
                     Bag
                 </router-link>
                 <div class="nav-item">
                     <div class="field is-grouped">
                         <p class="control">
-                            <a class="button" href="http://www.github.com/setholito/charcoal">
+                            <a
+                                class="button"
+                                href="http://www.github.com/setholito/charcoal"
+                            >
                                 <span class="icon">
                                     <i class="fa fa-github"></i>
                                 </span>

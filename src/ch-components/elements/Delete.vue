@@ -1,6 +1,6 @@
 <template>
     <div class="delete-container">
-        <a class="delete" :class="describer"></a>
+        <a :class="`delete ${describer}`"></a>
     </div>
 </template>
 

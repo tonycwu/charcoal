@@ -3,8 +3,7 @@
         <section class="section">
             <div class="columns">
                 <div class="column is-2 is-offset-1">
-                    <ch-menu
-                        :menuData="bagMenuData">
+                    <ch-menu :menuData="bagMenuData">
                     </ch-menu>
                 </div>
                 <div class="column is-8">

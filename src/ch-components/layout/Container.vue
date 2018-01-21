@@ -1,5 +1,5 @@
 <template>
-    <div class="container" :class="describer">
+    <div :class="`container ${describer}`">
         <slot></slot>
     </div>
 </template>

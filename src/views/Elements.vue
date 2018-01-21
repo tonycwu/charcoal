@@ -9,12 +9,16 @@
         </div>
         <div class="columns">
             <div class="column is-6">
-                <h5 id="checkbox-group" class="title is-5">
+                <h5
+                    class="title is-5"
+                    id="checkbox-group"
+                >
                     Checkbox Group
                 </h5>
-                <ch-field-checkbox-group 
+                <ch-field-checkbox-group
+                    :checkboxData="fontData"
                     @checkboxPick="setFontChoices"
-                    :checkboxData="fontData">
+                >
                 </ch-field-checkbox-group>
                 <br>
                 <pre><code>{{ fontChoices }}</code></pre>
@@ -33,8 +37,9 @@
                     Radio Group
                 </h5>
                 <ch-field-radio-group
+                    :radioData="fontStyleData"
                     @radioPick="setFontStyle($event.target.value)"
-                    :radioData="fontStyleData">
+                >
                 </ch-field-radio-group>
                 <br>
                 <pre><code>{{ fontStyleSelection }}</code></pre>

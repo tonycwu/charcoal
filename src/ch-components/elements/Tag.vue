@@ -1,6 +1,6 @@
 <template>
     <div class="tag-container">
-        <span class="tag" :class="describer">
+        <span :class="`tag ${describer}`">
             <slot></slot>
         </span>
     </div>

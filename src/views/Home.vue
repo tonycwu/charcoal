@@ -2,7 +2,10 @@
     <div class="home-container">
         <section class="section">
             <div class="has-text-centered">
-                <img width="200" src="../assets/charcoal-logo.png">
+                <img
+                    src="../assets/charcoal-logo.png"
+                    width="200"
+                >
                 <h1 class="title is-1">
                     {{ title }}
                 </h1>
@@ -13,11 +16,15 @@
         </section>
         <section class="section">
             <div class="columns">
-                <div class="column" v-for="card in ['First', 'Second', 'Third']">
+                <div
+                    class="column"
+                    v-for="card in ['First', 'Second', 'Third']"
+                >
                     <ch-card
+                        :footerBtns="cardInfo['footer-buttons']"
                         :title="card"
                         subtitle="Genius Name"
-                        :footerBtns="cardInfo['footer-buttons']">
+                    >
                     </ch-card>
                 </div>
             </div>
@@ -36,20 +43,20 @@ export default {
             subtitle: 'Fuel for Web Apps',
             cardInfo: {
                 'footer-buttons': [
-                    { 
-                        verb: 'Like', 
+                    {
+                        verb: 'Like',
                         link: 'http://www.google.com',
-                        icon: 'fa-thumbs-up' 
-                    }, 
-                    { 
-                        verb: 'Tweet', 
+                        icon: 'fa-thumbs-up'
+                    },
+                    {
+                        verb: 'Tweet',
                         link: 'http://www.google.com',
                         icon: 'fa-twitter'
-                    }, 
-                    { 
-                        verb: 'Share', 
+                    },
+                    {
+                        verb: 'Share',
                         link: 'http://www.google.com',
-                        icon: 'fa-share' 
+                        icon: 'fa-share'
                     }
                 ]
             },

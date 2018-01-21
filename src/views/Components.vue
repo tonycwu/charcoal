@@ -9,11 +9,13 @@
         </div>
         <div class="columns">
             <div class="column is-6">
-                <h5 id="breadcrumb" class="title is-5">
+                <h5
+                    class="title is-5"
+                    id="breadcrumb"
+                >
                     Breadcrumb
                 </h5>
-                <ch-breadcrumb 
-                    :crumbData="crumbData">
+                <ch-breadcrumb :crumbData="crumbData">
                 </ch-breadcrumb>
             </div>
             <div class="column is-6">
@@ -24,15 +26,18 @@
             </div>
         </div>
         <hr>
-
         <div class="columns">
             <div class="column is-6">
-                <h5 id="card" class="title is-5">
+                <h5
+                    class="title is-5"
+                    id="card"
+                >
                     Card
                 </h5>
                 <ch-card
+                    :subtitle="card.subtitle"
                     :title="card.title"
-                    :subtitle="card.subtitle">
+                >
                 </ch-card>
             </div>
             <div class="column is-6">
@@ -43,12 +48,13 @@
             </div>
         </div>
         <hr>
-
-        <h5 id="level" class="title is-5">
+        <h5
+            class="title is-5"
+            id="level"
+        >
             Level
         </h5>
-        <ch-level
-            :levelData="levelData">
+        <ch-level :levelData="levelData">
         </ch-level>
         <br>
         <h5 class="title is-5">
@@ -56,8 +62,10 @@
         </h5>
         <pre><code>&lt;ch-level<br>    :levelData="levelData"&gt;<br>&lt;/ch-level&gt;</code></pre>
         <hr>
-
-        <h5 id="media-object" class="title is-5">
+        <h5
+            class="title is-5"
+            id="media-object"
+        >
             Media Object
         </h5>
         <ch-media-object>
@@ -68,14 +76,15 @@
         </h5>
         <pre><code>&lt;ch-media-object&gt;<br>&lt;/ch-media-object&gt;</code></pre>
         <hr>
-
         <div class="columns">
             <div class="column is-6">
-                <h5 id="menu" class="title is-5">
+                <h5
+                    class="title is-5"
+                    id="menu"
+                >
                     Menu
                 </h5>
-                <ch-menu
-                    :menuData="menuData">
+                <ch-menu :menuData="menuData">
                 </ch-menu>
             </div>
             <div class="column is-6">
@@ -86,10 +95,12 @@
             </div>
         </div>
         <hr>
-
         <div class="columns">
             <div class="column">
-                <h5 id="message" class="title is-5">
+                <h5
+                    class="title is-5"
+                    id="message"
+                >
                     Message
                 </h5>
             </div>
@@ -98,7 +109,8 @@
             <div class="column is-6">
                 <ch-message
                     describer=""
-                    title="Test Message">
+                    title="Test Message"
+                >
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo accusantium, laudantium suscipit soluta, atque ipsum distinctio doloremque vero...
                         <br /><br />
@@ -113,36 +125,42 @@
             </div>
         </div>
         <hr>
-
-        <h5 id="modal" class="title is-5">
+        <h5
+            class="title is-5"
+            id="modal"
+        >
             Modal
         </h5>
-        <button 
-            @click="modal1IsOpen = !modal1IsOpen" 
-            class="button">
+        <button
+            @click="modal1IsOpen = !modal1IsOpen"
+            class="button"
+        >
             Open Modal 1
         </button>
-        <button 
-            @click="modal2IsOpen = !modal2IsOpen" 
-            class="button">
+        <button
+            @click="modal2IsOpen = !modal2IsOpen"
+            class="button"
+        >
             Open Modal 2
         </button>
         <ch-modal
+            :isOpen="modal1IsOpen"
             @closeModal="modal1IsOpen = !modal1IsOpen"
             @primaryClickModal="fakeSave"
-            :isOpen="modal1IsOpen"
             hasModalCard="true"
-            title="A Very Excellent Modal">
+            title="A Very Excellent Modal"
+        >
             <p>
                 I've got some content!
             </p>
         </ch-modal>
         <ch-modal
+            :isOpen="modal2IsOpen"
             @closeModal="modal2IsOpen = !modal2IsOpen"
             @primaryClickModal="fakeSave"
-            :isOpen="modal2IsOpen"
             hasModalCard="true"
-            title="A Second Modal">
+            title="A Second Modal"
+        >
             <p>
                 I've got even better content!
             </p>
@@ -151,19 +169,26 @@
             </p>
         </ch-modal>
         <hr>
-
-        <h5 id="panel" class="title is-5">
+        <h5
+            class="title is-5"
+            id="panel"
+        >
             Panel
         </h5>
         <ch-panel>
         </ch-panel>
         <hr>
-
-        <h5 id="tabs" class="title is-5">
+        <h5
+            class="title is-5"
+            id="tabs"
+        >
             Tabs
         </h5>
         <ch-tabs>
-            <ch-tab name="Serif" selected>
+            <ch-tab
+                name="Serif"
+                selected
+            >
                 I do love Baskerville.
             </ch-tab>
             <ch-tab name="Sans Serif">
