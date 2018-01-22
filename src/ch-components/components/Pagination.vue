@@ -1,8 +1,12 @@
 <template>
     <div class="pagination-container">
         <nav class="pagination is-centered">
-            <a class="pagination-previous">Previous</a>
-            <a class="pagination-next">Next page</a>
+            <a class="pagination-previous">
+                Previous
+            </a>
+            <a class="pagination-next">
+                Next page
+            </a>
             <ul class="pagination-list">
                 <li>
                     <a class="pagination-link">1</a>

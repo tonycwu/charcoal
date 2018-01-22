@@ -1,6 +1,6 @@
 <template>
     <div class="image-container">
-        <figure class="image" :class="describer">
+        <figure :class="image ${describer}">
             <img :src="src" />
         </figure>
     </div>

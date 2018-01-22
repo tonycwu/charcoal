@@ -1,9 +1,10 @@
 <template>
     <progress
-        class="progress"
         :class="describer"
+        :max="max"
         :value="number"
-        :max="max">
+        class="progress"
+    >
         {{ number }}
     </progress>
 </template>

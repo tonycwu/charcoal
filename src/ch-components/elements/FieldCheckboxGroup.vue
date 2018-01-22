@@ -1,14 +1,18 @@
 <template>
     <div class="checkbox-group-container">
-        <div class="field" v-for="checkbox in checkboxData">
+        <div
+            class="field"
+            v-for="checkbox in checkboxData"
+        >
             <p class="control">
                 <label class="checkbox">
                     <input
-                        type="checkbox"
                         :name="checkbox.name"
                         :value="checkbox.value"
+                        @click="checkboxClicked"
+                        type="checkbox"
                         v-model="checkboxModel"
-                        @click="checkboxClicked" />
+                    />
                     {{ checkbox.name }}
                 </label>
             </p>
@@ -38,7 +42,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 label {
     cursor: pointer;

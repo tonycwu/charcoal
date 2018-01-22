@@ -5,7 +5,11 @@
                 Name
             </label>
             <p class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input
+                    class="input"
+                    placeholder="Text input"
+                    type="text"
+                />
             </p>
         </div>
     </div>

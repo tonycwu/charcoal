@@ -1,6 +1,6 @@
 <template>
     <div class="button-container">
-        <a class="button" :class="describer">
+        <a :class="`button ${describer}`">
             <slot></slot>
         </a>
     </div>

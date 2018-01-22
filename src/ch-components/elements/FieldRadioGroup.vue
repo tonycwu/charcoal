@@ -4,12 +4,13 @@
             <p class="control">
                 <label class="radio">
                     <input
-                        type="radio"
                         :name="radio.name"
                         :value="radio.value"
+                        @click="radioClicked"
+                        type="radio"
                         v-model="radioModel"
-                        @click="radioClicked" />
-                        {{ radio.name }}
+                    />
+                    {{ radio.name }}
                 </label>
             </p>
         </div>

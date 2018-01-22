@@ -1,6 +1,6 @@
 <template>
     <div class="notification-container">
-        <div class="notification" :class="describer">
+        <div :class="`notification ${describer}`">
             <button class="delete"></button>
             <slot></slot>
         </div>
