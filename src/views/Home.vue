@@ -1,5 +1,5 @@
 <template>
-    <Hero class="is-danger is-bold has-text-centered">
+    <Hero class="is-danger is-bold is-large has-text-centered">
         <img
             src="../assets/charcoal-logo.svg"
             width="150"
