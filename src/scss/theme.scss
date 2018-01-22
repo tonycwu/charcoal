@@ -10,5 +10,8 @@ $danger: $red;
 $light: $white-ter;
 $dark: $grey-darker;
 
+$link: $danger;
+$link-hover: darken($danger, 20%);
+
 // Generic Variables
 $body-background-color: #fff;
