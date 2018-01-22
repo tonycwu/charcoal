@@ -1,13 +1,22 @@
 <p align="center">
-  <br>
-  <img width="200" src="https://raw.githubusercontent.com/setholito/charcoal/master/src/assets/charcoal-logo.png" alt="Charcoal Logo">
-  <br>
+    <br>
+    <img width="200" src="https://raw.githubusercontent.com/setholito/charcoal/master/src/assets/charcoal-logo.png" alt="Charcoal Logo">
+    <br>
 </p>
 
 # Charcoal
 ### Fuel for Web Apps
 
-> A Vue.js project
+> A starter template using the [Vue](http://vuejs.org/) CLI webpack-simple and styled with [Bulma](http://bulma.io/).
+
+Includes:
+* vue
+* vue-router
+* bulma
+* axios
+* font-awesome
+* lodash
+* moment
 
 ## Build Setup
 
@@ -22,4 +31,4 @@ npm run dev
 npm run build
 ```
 
-A collection of [Vue](http://vuejs.org/) components styled using [Bulma](http://bulma.io/).
+For documentation visit the repo's [wiki](/setholito/charcoal/wiki).
