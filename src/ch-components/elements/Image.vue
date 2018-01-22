@@ -1,18 +1,13 @@
 <template>
-    <div class="image-container">
-        <figure class="image" :class="describer">
-            <img :src="src" />
-        </figure>
-    </div>
+    <figure class="image">
+        <img :src="src" />
+    </figure>
 </template>
 
 <script>
 
 export default {
     props: {
-        describer: {
-            type: String
-        },
         src: {
             type: String
         }

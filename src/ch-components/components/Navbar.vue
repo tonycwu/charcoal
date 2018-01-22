@@ -1,41 +1,53 @@
 <template>
-    <div class="navbar-container">
-        <nav class="nav">
-            <div class="nav-left">
-                <router-link to="/" class="nav-item">
-                    <span class="icon">
-                        <i class="fa fa-home"></i>
-                    </span>
-                </router-link>
-            </div>
-            <div class="nav-center">
-            </div>
-            <span class="nav-toggle">
+    <nav
+        aria-label="main navigation"
+        class="navbar"
+        role="navigation"
+    >
+        <div class="navbar-brand">
+            <slot name="navbar-brand"></slot>
+            <!-- Must be last child in navbar-brand -->
+            <div
+                :class="isActive"
+                @click="toggleMenu"
+                class="navbar-burger burger"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
-            </span>
-            <div class="nav-right nav-menu">
-                <router-link to="/bag/components" class="nav-item">
-                    Bag
-                </router-link>
-                <div class="nav-item">
-                    <div class="field is-grouped">
-                        <p class="control">
-                            <a class="button" href="http://www.github.com/setholito/charcoal">
-                                <span class="icon">
-                                    <i class="fa fa-github"></i>
-                                </span>
-                                <span>Fork</span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
             </div>
-        </nav>
-    </div>
+        </div>
+        <div
+            :class="isActive"
+            class="navbar-menu"
+        >
+            <div class="navbar-start">
+                <slot name="navbar-start"></slot>
+            </div>
+            <div class="navbar-end">
+                <slot name="navbar-end"></slot>
+            </div>
+        </div>
+    </nav>
 </template>
 
-<script></script>
+<script>
+
+export default {
+    data() {
+        return {
+            isActive: {
+                'is-active': false
+            }
+        }
+    },
+    methods: {
+        toggleMenu() {
+            this.isActive['is-active'] = !this.isActive['is-active'];
+        }
+    }
+}
+
+</script>
 
 <style lang="scss"></style>

@@ -7,8 +7,8 @@
             <p class="control">
                 <span class="select">
                     <select>
-                        <option>Select dropdown</option>
-                        <option>With options</option>
+                        <option>Select One</option>
+                        <slot></slot>
                     </select>
                 </span>
             </p>

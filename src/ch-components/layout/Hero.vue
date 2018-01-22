@@ -1,19 +1,13 @@
 <template>
-    <div class="hero-container" :class="describer">
-        <slot></slot>
-    </div>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <slot></slot>
+            </div>
+        </div>
+    </section>
 </template>
 
-<script>
-
-export default {
-    props: {
-        describer: {
-            type: String
-        }
-    }
-}
-
-</script>
+<script></script>
 
 <style lang="scss"></style>

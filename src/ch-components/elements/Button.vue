@@ -1,21 +1,9 @@
 <template>
-    <div class="button-container">
-        <a class="button" :class="describer">
-            <slot></slot>
-        </a>
-    </div>
+    <a class="button">
+        <slot></slot>
+    </a>
 </template>
 
-<script>
-
-export default {
-    props: {
-        describer: {
-            type: String
-        }
-    }
-}
-
-</script>
+<script></script>
 
 <style lang="scss"></style>

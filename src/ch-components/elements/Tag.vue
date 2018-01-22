@@ -1,21 +1,9 @@
 <template>
-    <div class="tag-container">
-        <span class="tag" :class="describer">
-            <slot></slot>
-        </span>
-    </div>
+    <span class="tag">
+        <slot></slot>
+    </span>
 </template>
 
-<script>
-
-export default {
-    props: {
-        describer: {
-            type: String
-        }
-    }
-}
-
-</script>
+<script></script>
 
 <style lang="scss"></style>

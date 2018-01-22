@@ -5,7 +5,11 @@
                 Message
             </label>
             <p class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
+                <textarea
+                    class="textarea"
+                    placeholder="Textarea"
+                >
+                </textarea>
             </p>
         </div>
     </div>

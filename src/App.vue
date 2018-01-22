@@ -1,19 +1,22 @@
 <template>
     <div id="app">
         <ch-header></ch-header>
-        <transition
-            name="fade"
-            mode="out-in">
-            <router-view></router-view>
-        </transition>
+        <main id="main-content">
+            <transition
+                mode="out-in"
+                name="fade"
+            >
+                <router-view></router-view>
+            </transition>
+        </main>
         <ch-footer></ch-footer>
     </div>
 </template>
 
 <script>
 
-import ChHeader from './ch-components/constants/Header.vue'
-import ChFooter from './ch-components/constants/Footer.vue'
+import ChHeader from './blocks/Header.vue'
+import ChFooter from './blocks/Footer.vue'
 
 export default {
     components: {
@@ -26,17 +29,39 @@ export default {
 
 <style lang="scss">
 
-$primary: #4d4d4d;
+// https://bulma.io/documentation/overview/customize/
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../node_modules/bulma/sass/utilities/functions.sass";
 
+// Theme Variables
+@import "./scss/theme";
+
+// Import the rest of Bulma
 @import "../node_modules/bulma/bulma.sass";
+
+// Font Awesome
 @import "../node_modules/font-awesome/css/font-awesome.css";
-    
+
+// Transitions
 .fade-enter-active, .fade-leave-active {
     transition: opacity .2s;
 }
 
 .fade-enter, .fade-leave-active {
     opacity: 0;
+}
+
+// Page styling
+html,
+body,
+#app {
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 </style>

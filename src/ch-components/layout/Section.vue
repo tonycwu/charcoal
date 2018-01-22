@@ -1,19 +1,9 @@
 <template>
-    <div class="section-container" :class="describer">
+    <section class="section">
         <slot></slot>
-    </div>
+    </section>
 </template>
 
-<script>
-
-export default {
-    props: {
-        describer: {
-            type: String
-        }
-    }
-}
-
-</script>
+<script></script>
 
 <style lang="scss"></style>
