@@ -8,7 +8,7 @@
 
 <script>
 
-import Footer from '../layout/Footer.vue'
+import Footer from '../ch-components/layout/Footer.vue'
 
 export default {
     components: {

@@ -1,7 +1,7 @@
 {
-  "name": "vue-bulma-boilerplate",
+  "name": "vue-bulma-starter-kit",
   "description": "A Vue.js project",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Seth Davis <setholito@gmail.com>",
   "private": true,
   "scripts": {

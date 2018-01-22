@@ -15,8 +15,8 @@
 
 <script>
 
-import ChHeader from './ch-components/constants/Header.vue'
-import ChFooter from './ch-components/constants/Footer.vue'
+import ChHeader from './blocks/Header.vue'
+import ChFooter from './blocks/Footer.vue'
 
 export default {
     components: {
