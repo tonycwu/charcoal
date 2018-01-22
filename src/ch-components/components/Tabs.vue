@@ -1,6 +1,6 @@
 <template>
     <div class="tabs-container">
-        <div class="tabs" :class="describer">
+        <div class="tabs" :class="modifier">
             <ul>
                 <li v-for="tab in tabs" :class="{ 'is-active' : tab.isActive }">
                     <a :href="tab.link" @click="selectTab(tab)">
@@ -17,7 +17,7 @@
 
 export default {
     props: {
-        describer: {
+        modifier: {
             type: String
         }
     },

@@ -1,16 +1,20 @@
 <template>
-    <div :class="`footer-container ${describer}`">
-        <slot></slot>
-    </div>
+    <footer class="footer">
+        <Container>
+            <div class="content has-text-centered">
+                <slot></slot>
+            </div>
+        </Container>
+    </footer>
 </template>
 
 <script>
 
+import Container from './Container.vue'
+
 export default {
-    props: {
-        describer: {
-            type: String
-        }
+    components: {
+        Container
     }
 }
 

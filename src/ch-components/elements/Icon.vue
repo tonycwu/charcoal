@@ -1,18 +1,13 @@
 <template>
-    <div class="icon-container">
-        <span :class="`icon ${describer}`">
-            <i :class="`fa ${icon}`"></i>
-        </span>
-    </div>
+    <span class="icon">
+        <i :class="`fa ${icon}`"></i>
+    </span>
 </template>
 
 <script>
 
 export default {
     props: {
-        describer: {
-            type: String
-        },
         icon: {
             type: String
         }
