@@ -29,7 +29,7 @@ export default {
         title: {
             type: String,
             default: 'Title'
-        }, 
+        },
         subtitle: {
             type: String,
             default: 'Subtitle'
