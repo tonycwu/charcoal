@@ -1,6 +1,5 @@
 <template>
     <progress
-        :class="describer"
         :max="max"
         :value="number"
         class="progress"
@@ -13,9 +12,6 @@
 
 export default {
     props: {
-        describer: {
-            type: String
-        },
         number: {
             type: String
         },

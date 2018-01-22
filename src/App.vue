@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss">
 
-// Organization taken from: https://bulma.io/documentation/overview/customize/
+// https://bulma.io/documentation/overview/customize/
 @import "../node_modules/bulma/sass/utilities/initial-variables.sass";
 @import "../node_modules/bulma/sass/utilities/functions.sass";
 

@@ -1,19 +1,7 @@
 <template>
-    <div class="delete-container">
-        <a :class="`delete ${describer}`"></a>
-    </div>
+    <a class="delete"></a>
 </template>
 
-<script>
-
-export default {
-    props: {
-        describer: {
-            type: String
-        }
-    }
-}
-
-</script>
+<script></script>
 
 <style lang="scss"></style>
