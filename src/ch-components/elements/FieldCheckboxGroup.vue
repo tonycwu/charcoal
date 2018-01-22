@@ -1,22 +1,20 @@
 <template>
-    <div class="checkbox-group-container">
-        <div
-            class="field"
-            v-for="checkbox in checkboxData"
-        >
-            <p class="control">
-                <label class="checkbox">
-                    <input
-                        :name="checkbox.name"
-                        :value="checkbox.value"
-                        @click="checkboxClicked"
-                        type="checkbox"
-                        v-model="checkboxModel"
-                    />
-                    {{ checkbox.name }}
-                </label>
-            </p>
-        </div>
+    <div
+        class="field"
+        v-for="checkbox in checkboxData"
+    >
+        <p class="control">
+            <label class="checkbox">
+                <input
+                    :name="checkbox.name"
+                    :value="checkbox.value"
+                    @click="checkboxClicked"
+                    type="checkbox"
+                    v-model="checkboxModel"
+                />
+                {{ checkbox.name }}
+            </label>
+        </p>
     </div>
 </template>
 

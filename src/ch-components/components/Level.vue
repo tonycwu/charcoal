@@ -1,21 +1,19 @@
 <template>
-    <div class="level-container">
-        <nav class="level">
-            <div
-                v-for="level in levelData"
-                class="level-item has-text-centered"
-            >
-                <div>
-                    <p class="heading">
-                        {{ level.heading }}
-                    </p>
-                    <p class="title">
-                        {{ level.title }}
-                    </p>
-                </div>
+    <nav class="level">
+        <div
+            v-for="level in levelData"
+            class="level-item has-text-centered"
+        >
+            <div>
+                <p class="heading">
+                    {{ level.heading }}
+                </p>
+                <p class="title">
+                    {{ level.title }}
+                </p>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </template>
 
 <script>

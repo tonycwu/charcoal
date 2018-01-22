@@ -1,9 +1,7 @@
 <template>
-    <div class="form-container">
-        <form>
-            <slot></slot>
-        </form>
-    </div>
+    <form>
+        <slot></slot>
+    </form>
 </template>
 
 <script></script>

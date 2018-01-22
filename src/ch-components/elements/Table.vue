@@ -1,13 +1,11 @@
 <template>
-    <div class="table-container">
-        <table>
-            <tr>
-                <td>
-                    Test
-                </td>
-            </tr>
-        </table>
-    </div>
+    <table>
+        <tr>
+            <td>
+                Test
+            </td>
+        </tr>
+    </table>
 </template>
 
 <script></script>
