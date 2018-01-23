@@ -1,5 +1,5 @@
 <template>
-    <Section>
+    <ch-section>
         <h1 class="title is-1">
             About
         </h1>
@@ -9,16 +9,16 @@
         <p>
             Feel free to create pull requests or fork it for yourself.
         </p>
-    </Section>
+    </ch-section>
 </template>
 
 <script>
 
-import Section from '../ch-components/layout/Section.vue';
+import ChSection from '../ch-components/layout/Section.vue';
 
 export default {
     components: {
-        Section
+        ChSection
     }
 }
 
