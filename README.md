@@ -17,6 +17,7 @@ Includes:
 * font-awesome
 * lodash
 * moment
+* jest
 
 ## Build Setup
 
