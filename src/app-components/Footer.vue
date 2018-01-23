@@ -1,18 +1,18 @@
 <template>
-    <Footer>
+    <ch-footer>
         <p>
             <a href="https://www.github.com/setholito/charcoal"><strong>Charcoal</strong></a> by <a href="https://setholito.github.io">Seth Davis</a>.
         </p>
-    </Footer>
+    </ch-footer>
 </template>
 
 <script>
 
-import Footer from '../ch-components/layout/Footer.vue'
+import ChFooter from '../ch-components/layout/Footer.vue'
 
 export default {
     components: {
-        Footer
+        ChFooter
     }
 }
 
