@@ -1,5 +1,5 @@
 <template>
-    <Navbar class="is-fixed-top is-dark">
+    <ch-navbar class="is-fixed-top is-dark">
         <router-link
             class="navbar-item"
             slot="navbar-brand"
@@ -19,16 +19,16 @@
             </span>
             About
         </router-link>
-    </Navbar>
+    </ch-navbar>
 </template>
 
 <script>
 
-import Navbar from '../ch-components/components/Navbar.vue'
+import ChNavbar from '../ch-components/components/Navbar.vue'
 
 export default {
     components: {
-        Navbar
+        ChNavbar
     }
 }
 

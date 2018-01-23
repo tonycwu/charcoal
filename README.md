@@ -31,4 +31,4 @@ npm run dev
 npm run build
 ```
 
-For documentation visit the repo's [wiki](/setholito/charcoal/wiki).
+For documentation visit the repo's [wiki](https://github.com/setholito/charcoal/wiki).
