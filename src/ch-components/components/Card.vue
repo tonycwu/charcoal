@@ -1,33 +1,17 @@
 <template>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-content">
-                <p class="title">
-                    {{ title }}
-                </p>
-                <p class="subtitle">
-                    {{ subtitle }}
-                </p>
-            </div>
+    <div class="card">
+        <header class="card-header">
+            <slot name="header"></slot>
+        </header>
+        <div class="card-content">
+            <slot name="content"></slot>
         </div>
+        <footer class="card-footer">
+            <slot name="footer"></slot>
+        </footer>
     </div>
 </template>
 
-<script>
-
-export default {
-    props: {
-        title: {
-            type: String,
-            default: 'Title'
-        },
-        subtitle: {
-            type: String,
-            default: 'Subtitle'
-        }
-    }
-}
-
-</script>
+<script></script>
 
 <style lang="scss"></style>

@@ -1,46 +1,31 @@
 <template>
-    <div class="modal" :class="{ 'is-active': isOpen }">
-        <div class="modal-background" @click="closeClick"></div>
-        <div class="modal-card" v-if="hasModalCard">
+    <div
+        :class="{ 'is-active': isOpen }"
+        class="modal"
+    >
+        <div
+            @click="closeClick"
+            class="modal-background"
+        >
+        </div>
+        <div class="modal-card">
             <header class="modal-card-head">
                 <p class="modal-card-title">
-                    {{ title }}
+                    <slot name="title"></slot>
                 </p>
                 <button
+                    aria-label="close"
                     class="delete"
                     @click="closeClick"
                 >
                 </button>
             </header>
             <section class="modal-card-body">
-                <slot></slot>
+                <slot name="body"></slot>
             </section>
             <footer class="modal-card-foot">
-                <a
-                    @click="primaryClick"
-                    class="button is-success"
-                >
-                    Save changes
-                </a>
-                <a
-                    @click="closeClick"
-                    class="button"
-                >
-                    Cancel
-                </a>
+                <slot name="footer"></slot>
             </footer>
-        </div>
-        <div class="image-container" v-else>
-            <div class="modal-content">
-                <p class="image is-4by3">
-                    <img src="http://bulma.io/images/placeholders/1280x960.png" />
-                </p>
-            </div>
-            <button
-                @click="closeClick"
-                class="modal-close is-large"
-            >
-            </button>
         </div>
     </div>
 </template>

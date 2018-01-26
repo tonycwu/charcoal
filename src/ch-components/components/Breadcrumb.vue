@@ -1,26 +1,14 @@
 <template>
-    <nav class="breadcrumb">
+    <nav
+        aria-label="breadcrumbs"
+        class="breadcrumb"
+    >
         <ul>
-            <li v-for="crumb in crumbData">
-                <a :href="crumb.link">
-                    {{ crumb.title }}
-                </a>
-            </li>
+            <slot></slot>
         </ul>
     </nav>
 </template>
 
-<script>
-
-export default {
-    props: {
-        crumbData: {
-            type: Array,
-            default: []
-        }
-    }
-}
-
-</script>
+<script></script>
 
 <style lang="scss"></style>

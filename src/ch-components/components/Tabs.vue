@@ -1,9 +1,15 @@
 <template>
     <div class="tabs-container">
-        <div class="tabs" :class="modifier">
+        <div :class="`tabs ${modifier}`">
             <ul>
-                <li v-for="tab in tabs" :class="{ 'is-active' : tab.isActive }">
-                    <a :href="tab.link" @click="selectTab(tab)">
+                <li
+                    :class="{ 'is-active' : tab.isActive }"
+                    v-for="tab in tabs"
+                >
+                    <a
+                        @click="selectTab(tab)"
+                        :href="tab.link"
+                    >
                         {{ tab.name }}
                     </a>
                 </li>
