@@ -1,7 +1,7 @@
 <template>
-    <aside class="menu">
+    <p class="menu-label">
         <slot></slot>
-    </aside>
+    </p>
 </template>
 
 <script></script>

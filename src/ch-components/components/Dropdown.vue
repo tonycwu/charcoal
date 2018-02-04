@@ -1,20 +1,24 @@
 <template>
     <div
-        class="dropdown"
         :class="{ 'is-active': isOpen }"
+        class="dropdown"
     >
         <div class="dropdown-trigger">
             <button
+                @click="openDropdown"
                 aria-controls="dropdown-menu"
                 aria-haspopup="true"
                 class="button"
-                @click="openDropdown"
             >
                 <span>
                     <slot name="name"></slot>
                 </span>
                 <span class="icon is-small">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <i
+                        aria-hidden="true"
+                        class="fa fa-angle-down"
+                    >
+                    </i>
                 </span>
             </button>
         </div>

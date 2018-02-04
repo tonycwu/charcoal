@@ -1,10 +1,14 @@
 <template>
     <table>
-        <tr>
-            <td>
-                Test
-            </td>
-        </tr>
+        <thead>
+            <slot name="thead"></slot>
+        </thead>
+        <tfoot>
+            <slot name="thead"></slot>
+        </tfoot>
+        <tbody>
+            <slot name="tbody"></slot>
+        </tbody>
     </table>
 </template>
 

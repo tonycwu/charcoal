@@ -18,7 +18,7 @@ import ChSection from '../ch-components/layout/Section.vue'
 
 export default {
     components: {
-        ChSection
+        ChSection,
     }
 }
 

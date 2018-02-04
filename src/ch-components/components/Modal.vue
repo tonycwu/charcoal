@@ -32,28 +32,22 @@
 
 <script>
 
-    export default {
-        props: {
-            title: {
-                type: String
-            },
-            isOpen: {
-                type: Boolean
-            },
-            hasModalCard: {
-                type: String
-            }
+export default {
+    props: {
+        isOpen: {
+            type: Boolean
+        }
+    },
+    methods: {
+        primaryClick() {
+            this.$emit('primaryClickModal');
+            this.$emit('closeModal');
         },
-        methods: {
-            primaryClick() {
-                this.$emit('primaryClickModal');
-                this.$emit('closeModal');
-            },
-            closeClick() {
-                this.$emit('closeModal');
-            }
+        closeClick() {
+            this.$emit('closeModal');
         }
     }
+}
 
 </script>
 

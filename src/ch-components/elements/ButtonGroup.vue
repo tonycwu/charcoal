@@ -1,7 +1,7 @@
 <template>
-    <aside class="menu">
+    <div class="field is-grouped">
         <slot></slot>
-    </aside>
+    </div>
 </template>
 
 <script></script>
