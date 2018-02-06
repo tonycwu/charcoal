@@ -1,14 +1,14 @@
 <template>
-    <span class="icon">
-        <i :class="`fa fa-${iconName}`"></i>
-    </span>
+    <figure class="image">
+        <img :src="src" />
+    </figure>
 </template>
 
 <script>
 
 export default {
     props: {
-        iconName: {
+        src: {
             type: String
         }
     }

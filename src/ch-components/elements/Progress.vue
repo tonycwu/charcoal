@@ -1,10 +1,10 @@
 <template>
     <progress
         :max="max"
-        :value="number"
+        :value="progress"
         class="progress"
     >
-        {{ number }}
+        {{ progress }}
     </progress>
 </template>
 
@@ -12,8 +12,8 @@
 
 export default {
     props: {
-        number: {
-            type: String
+        progress: {
+            type: Number
         },
         max: {
             type: String

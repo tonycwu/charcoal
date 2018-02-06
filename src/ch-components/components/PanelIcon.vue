@@ -1,5 +1,5 @@
 <template>
-    <span class="icon">
+    <span class="panel-icon">
         <i :class="`fa fa-${iconName}`"></i>
     </span>
 </template>
@@ -9,7 +9,8 @@
 export default {
     props: {
         iconName: {
-            type: String
+            type: String,
+            default: 'profile'
         }
     }
 }

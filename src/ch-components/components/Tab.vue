@@ -11,13 +11,13 @@ export default {
         name: {
             type: String
         },
-        selected: {
+        active: {
             type: Boolean,
             default: false
         }
     },
     created() {
-        this.isActive = this.selected;
+        this.isActive = this.active;
     },
     data() {
         return {

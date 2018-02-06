@@ -14,7 +14,7 @@
 
 <script>
 
-import ChSection from '../ch-components/layout/Section.vue';
+import ChSection from '../ch-components/layout/Section.vue'
 
 export default {
     components: {

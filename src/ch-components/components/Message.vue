@@ -1,13 +1,15 @@
 <template>
     <article class="message">
         <div class="message-header">
-            <p>
-                {{ title }}
-            </p>
-            <button class="delete" @click="closeMessage"></button>
+            <slot name="header"></slot>
+            <button
+                @click="closeMessage"
+                class="delete"
+            >
+            </button>
         </div>
         <div class="message-body">
-            <slot></slot>
+            <slot name="body"></slot>
         </div>
     </article>
 </template>
@@ -15,14 +17,9 @@
 <script>
 
 export default {
-    props: {
-        title: {
-            type: String
-        }
-    },
     methods: {
         closeMessage() {
-            alert('Close message fired...');
+            this.$emit('closeMessage');
         }
     }
 }
