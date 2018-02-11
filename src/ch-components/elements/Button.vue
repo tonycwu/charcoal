@@ -1,9 +1,20 @@
 <template>
     <button class="button">
-        <slot></slot>
+        {{ text }}
     </button>
 </template>
 
-<script></script>
+<script>
+
+export default {
+    props: {
+        text: {
+            type: String,
+            required: true
+        }
+    }
+}
+
+</script>
 
 <style lang="scss"></style>

@@ -4,7 +4,6 @@
         :value="progress"
         class="progress"
     >
-        {{ progress }}
     </progress>
 </template>
 

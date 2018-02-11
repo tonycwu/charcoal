@@ -15,8 +15,8 @@
 
 <script>
 
-import ChHeader from './app-components/Header.vue'
-import ChFooter from './app-components/Footer.vue'
+import ChHeader from './partials/Header.vue'
+import ChFooter from './partials/Footer.vue'
 
 export default {
     components: {
@@ -36,20 +36,14 @@ export default {
 // Theme Variables
 @import "./scss/theme";
 
+// Transitions
+@import "./scss/transitions";
+
 // Import the rest of Bulma
 @import "../node_modules/bulma/bulma.sass";
 
 // Font Awesome
 @import "../node_modules/font-awesome/css/font-awesome.css";
-
-// Transitions
-.fade-enter-active, .fade-leave-active {
-    transition: opacity .2s;
-}
-
-.fade-enter, .fade-leave-active {
-    opacity: 0;
-}
 
 // Page styling
 html,
