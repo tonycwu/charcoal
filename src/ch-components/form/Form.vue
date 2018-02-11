@@ -1,16 +1,16 @@
 <template>
     <div class="form-container">
         <ch-notification
+            @dismiss="dismissNotification"
             class="is-success"
             v-show="isVisible && isSuccessful"
-            @dismiss="dismissNotification"
         >
             {{ successMsg }}
         </ch-notification>
         <ch-notification
+            @dismiss="dismissNotification"
             class="is-danger"
             v-show="isVisible && isFailure"
-            @dismiss="dismissNotification"
         >
             {{ failureMsg }}
         </ch-notification>
