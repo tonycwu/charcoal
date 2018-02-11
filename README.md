@@ -9,6 +9,8 @@
 
 > A starter template using the [Vue](http://vuejs.org/) CLI webpack-simple and styled with [Bulma](http://bulma.io/).
 
+<img src="https://res.cloudinary.com/setholito/image/upload/v1518378200/charcoal/charcoal-sample.png" />
+
 Includes:
 * vue
 * vue-router
