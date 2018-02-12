@@ -71,9 +71,6 @@ export default {
         },
         submitForm() {
             this.$http.post(this.url, this.payload)
-                .then(() => {
-                    throw Error('Flopped!');
-                })
                 .then(res => {
                     this.res = res;
                 })
