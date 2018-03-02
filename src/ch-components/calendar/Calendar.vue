@@ -242,35 +242,29 @@ export default {
 
 <style lang="scss">
 $themeColor: dodgerblue;
+
 $headerPadding: 0.5rem 1rem;
 $headerBorderWidth: 1px;
 $headerBorderStyle: solid;
 $headerBorderColor: #aaaaaa;
 $headerBackground: $themeColor;
 $headerColor: white;
+
 $weekdayPadding: 0.4rem 0;
 $weekdayColor: #7a7a7a;
 $weekdayBorderWidth: 1px;
 $weekdayBorderStyle: solid;
 $weekdayBorderColor: #aaaaaa;
 $weekdayBackground: #eaeaea;
+
 $dayColor: #3a3a3a;
 $dayBorder: solid 1px #aaaaaa;
 $dayBackgroundColor: white;
 $dayWidth: 14.2857%;
 $dayHeight: 50px;
+
 $todayColor: white;
 $todayBackgroundColor: $themeColor;
-$fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-
-* {
-    box-sizing: border-box;
-}
-
-#app {
-    font-family: $fontFamily;
-    padding: 20px;
-}
 
 .calendar {
     display: flex;
@@ -281,12 +275,10 @@ $fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
     display: flex;
     justify-content: stretch;
     align-items: center;
-    color: $headerColor;
     padding: $headerPadding;
     border-width: $headerBorderWidth;
     border-style: $headerBorderStyle;
     border-color: $headerBorderColor;
-    background-color: $headerBackground;
 
     .arrow {
         cursor: pointer;
@@ -316,11 +308,9 @@ $fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
     justify-content: center;
     align-items: center;
     padding: $weekdayPadding;
-    color: $weekdayColor;
     border-width: $weekdayBorderWidth;
     border-style: $weekdayBorderStyle;
     border-color: $weekdayBorderColor;
-    background-color: $weekdayBackground;
 }
 
 .week {
@@ -333,14 +323,12 @@ $fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $dayColor;
-    background-color: $dayBackgroundColor;
     border: $dayBorder;
 }
 
 .today {
     font-weight: 500;
-    color: $todayColor;
+    color: white;
     background-color: $todayBackgroundColor;
 }
 
